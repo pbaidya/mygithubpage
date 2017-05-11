@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[Movie] (
+    [ID]         INT             IDENTITY (1, 1) NOT NULL,
+    [Name]       NVARCHAR (MAX)  NULL,
+    [OpenedOn]   DATETIME2 (7)   DEFAULT ('0001-01-01') NOT NULL,
+    [PriceRange] NVARCHAR (MAX) DEFAULT ((0.0)) NOT NULL,
+    [Type]       NVARCHAR (MAX)  NULL,
+    CONSTRAINT [PK_Movie] PRIMARY KEY CLUSTERED ([ID] ASC)
+);
+
